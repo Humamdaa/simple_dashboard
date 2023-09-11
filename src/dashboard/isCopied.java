@@ -5,16 +5,20 @@
  */
 package dashboard;
 
+import java.awt.Image;
 import java.awt.event.KeyEvent;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author humam.daas
  */
 public class isCopied extends javax.swing.JFrame {
-
+    private ImageIcon imgLike = new ImageIcon("E:\\codejava\\dashboard\\like.jpg");    
+    private Image like = imgLike.getImage();
     private String str;
     public isCopied(String s) {
+        setIconImage(like);
         initComponents();
         this.str = s;
         failedText(str);
